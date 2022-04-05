@@ -3,19 +3,19 @@ from collections import deque
 R, C = list(map(int, input().split()))
 sy, sx = list(map(int, input().split()))
 gy, gx = list(map(int, input().split()))
-S = []
-for i in range(R):
-  s = input()
-  S.append(s)
-
 sy -= 1
 sx -= 1
 gy -= 1
 gx -= 1
 
+S = []
+for _ in range(0, R):
+  s = input()
+  S.append(s)
+
 dist = []
-for i in range(R):
-  dist.append([-1]*C)
+for _ in range(0, R):
+  dist.append([-1] * C)
 
 Q = deque()
 Q.append([sy, sx])

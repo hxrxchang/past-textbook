@@ -24,7 +24,7 @@ def dfs(i, j):
   for i2, j2 in [[i+1, j], [i-1, j], [i, j+1], [i, j-1]]:
     if not (0 <= i2 < H and 0 <= j2 < W):
       continue
-    if S[i][j] == '#':
+    if S[i2][j2] == '#':
       continue
     if not visited[i2][j2]:
       dfs(i2, j2)
